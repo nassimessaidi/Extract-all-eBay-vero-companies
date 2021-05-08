@@ -20,6 +20,9 @@ except:
     errcode = process.returncode
     if errcode is not None:
         raise Exception('cmd %s failed, see above for details', required_libs)
+    import requests
+    import os
+    from bs4 import BeautifulSoup
 
 
 URL = "https://pages.ebay.com/seller-center/listing-and-marketing/verified-rights-owner-program.html#m17-1-tb3"
